@@ -1,11 +1,10 @@
 import React, { useRef } from 'react'
 import { API_KEY } from '../utils/constaint'
 import MovieItems from './MovieItems';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchRes } from '../movieSlice';
-import { auth } from '../utils/firebase';
-import { signOut } from 'firebase/auth';
+
 
 
 
@@ -35,14 +34,7 @@ const GptSearch = () => {
  
     }
     
-    const navigate = useNavigate();
-    const handleSignOut = () => {
-      signOut(auth)
-        .then(() => {})
-        .catch((error) => {
-          navigate("/error");
-        });
-    };
+
     
   return (<div>
     <img className='absolute w-screen h-screen' src="https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/20a59be7-7062-4991-bca0-805e9a7f2716/IN-en-20240107-trifectadaily-perspective_alpha_website_small.jpg" alt="" />
