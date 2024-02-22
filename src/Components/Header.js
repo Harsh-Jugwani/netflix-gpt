@@ -23,6 +23,15 @@ const Header = () => {
         navigate("/error");
       });
   };
+  const handleAlert =()=>{
+    if (window.confirm("Are you sure you want to sign-out!")) {
+      var txt = "You pressed OK!";
+      handleSignOut();
+    } else {
+      var txt = "You pressed Cancel!";
+    }
+
+  }
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -51,9 +60,10 @@ const Header = () => {
       
     <img className='w-44 ml-[30%] md:ml-0' src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="" />
 
-    <button onClick={handleSignOut} className="w-auto mt-3 p-1  shadow-sm bg-red-700 text-white rounded-lg ml-[70%]  md:ml-[90.5%] md:mt-2 py-2  cursor-pointer px-3 absolute z-10">
+    <button onClick={()=>{handleAlert()}} className="w-auto mt-3 p-1  shadow-sm bg-red-700 text-white rounded-lg ml-[70%]  md:ml-[90.5%] md:mt-2 py-2  cursor-pointer px-[1vw] absolute z-10">
             Sign Out
     </button>
+    
     <button className='bg-purple-700 mt-3 text-white rounded-lg ml-[2%] md:ml-[85%] md:mt-2 py-2  cursor-pointer px-3 absolute z-10' onClick={handleClick}>{SearchOption ? <h1>Home</h1> : <h1>Search</h1>} </button>
     </div>
 

@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import GptSearch from "./GptSearch";
 import Header from "./Header";
 
+
 const Display = () => {
     
  
@@ -28,6 +29,7 @@ const Display = () => {
         */}
         <Header/>
         <GptSearch/>
+  
         
   
   

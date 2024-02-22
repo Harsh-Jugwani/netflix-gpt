@@ -15,7 +15,7 @@ const MovieCard = () => {
 
   return (
     <div className="px-6 bg-[rgb(30,30,30)] md:-mt-60 -mt-0 ">
-      <h1 className="text-lg md:text-3xl py-4 text-white font-serif font-bold absolute">Now Playing</h1>
+      <h1 className="text-lg md:text-3xl py-4 text-white font-serif font-bold absolute mt-7">Now Playing</h1>
       <div className="flex overflow-x-scroll no-scrollbar pt-20">
         <div className="flex cursor-pointer">
           {NowPlayingMovie?.map((movie) => (
