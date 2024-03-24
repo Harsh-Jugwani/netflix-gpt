@@ -3,7 +3,7 @@ import useMovieList from "../hooks/useMovieList";
 import MainContainer from "./MainContainer";
 import SeconderyContainer from "./SeconderyContainer";
 import { useSelector } from "react-redux";
-import GptSearch from "./GptSearch";
+import GptSearch from "./Search";
 import Header from "./Header";
 
 const Display = () => {

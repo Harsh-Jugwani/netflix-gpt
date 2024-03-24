@@ -71,8 +71,16 @@ const Header = () => {
         className="bg-purple-700 mt-3 text-white rounded-lg ml-[0%] md:ml-[85%] md:mt-2 py-2  cursor-pointer px-3 absolute z-10"
         onClick={handleClick}
       >
-        {SearchOption ? <h1>Home</h1> : <h1>Search</h1>}{" "}
+        {SearchOption ? <h1>Home</h1> : <h1>Search</h1>}
       </button>
+      {SearchOption && (
+        <button
+          className="bg-purple-700 mt-3 text-white rounded-lg ml-[0%] md:ml-[77%] md:mt-2 py-2  cursor-pointer px-3 absolute z-10"
+          onClick={() => navigate("/gpt")}
+        >
+          <h1>Gpt Search</h1>
+        </button>
+      )}
     </div>
   );
 };

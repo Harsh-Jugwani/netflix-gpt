@@ -1,10 +1,10 @@
 {
   "name": "netflix-gpt",
   "version": "0.1.0",
-  "proxy":"https://api.themoviedb.org",
+  "proxy": "https://api.themoviedb.org",
   "private": true,
- 
   "dependencies": {
+    "@google/generative-ai": "^0.3.1",
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

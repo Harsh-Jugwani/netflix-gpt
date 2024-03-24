@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchRes } from "../movieSlice";
 
-const GptSearch = () => {
+const Search = () => {
   const { SearchRes } = useSelector((store) => store.movies);
   const dispatch = useDispatch();
 
@@ -64,13 +64,9 @@ const GptSearch = () => {
               </Link>
             ))}
         </div>
-        {/* <button onClick={()=>{handleAlert()}}   className="w-auto 
-        -mr-[40%] mt-24 shadow-sm bg-red-700 text-white rounded-lg   py-2 cursor-pointer px-3 absolute z-10 ">
-            Sign Out  
-    </button> */}
       </div>
     </div>
   );
 };
 
-export default GptSearch;
+export default Search;
