@@ -1,14 +1,12 @@
-import React from 'react'
-import MovieCard from './MovieCard'
+import React from "react";
+import MovieCard from "./MovieCard";
 
 const SeconderyContainer = () => {
   return (
     <div>
-      <MovieCard/>
- 
-
+      <MovieCard />
     </div>
-  )
-}
+  );
+};
 
-export default SeconderyContainer
+export default SeconderyContainer;
